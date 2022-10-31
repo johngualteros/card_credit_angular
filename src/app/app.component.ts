@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'card_credit_angular';
+  name: string = '';
+  cardNumber: number = 0;
+  expiryMonth: number = 0;
+  expiryYear: number = 0;
+  securityCode: string = '';
+  
 }

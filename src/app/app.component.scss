@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  .card {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: rgb(17, 17, 17);
+    background: linear-gradient(
+      150deg,
+      rgba(17, 17, 17, 1) 0%,
+      rgba(64, 64, 64, 1) 50%,
+      rgba(17, 17, 17, 1) 100%
+    );
+    border-radius: 10px;
+    z-index: 2;
+    top: 5px;
+    margin-right: 50px;
+    padding: 20px;
+    overflow: hidden;
+    color: #fff;
+    &-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+    }
+    &-body {
+      width: 100%;
+      height: 100%;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .form {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px 20px 20px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    input,
+    select {
+      width: 100%;
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0 10px;
+      font-size: 14px;
+      color: rgb(138, 29, 181);
+      outline: none;
+      &:focus {
+        border-color: rgb(138, 29, 181);
+      }
+    }
+  }
+}
